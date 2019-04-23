@@ -48,7 +48,7 @@ $(document).ready(function() {
     function callWeather() {
       // grabbing the location searched
       var searchLocat =
-        "http://dataservice.accuweather.com/locations/v1/cities/search?apikey=4Q9DJCTVu2oLZ5wB2LArLIjGUSqzYlLm&q=" +
+        "https://dataservice.accuweather.com/locations/v1/cities/search?apikey=4Q9DJCTVu2oLZ5wB2LArLIjGUSqzYlLm&q=" +
         cityLocation +
         "%20" +
         stateLocation +
@@ -69,7 +69,7 @@ $(document).ready(function() {
 
           //forecast URL
           var forecast =
-            "http://dataservice.accuweather.com/forecasts/v1/daily/5day/" +
+            "https://dataservice.accuweather.com/forecasts/v1/daily/5day/" +
             locationKeyNew +
             "?apikey=4Q9DJCTVu2oLZ5wB2LArLIjGUSqzYlLm&language=en-us&details=true&metric=false/";
           //second key 	4Q9DJCTVu2oLZ5wB2LArLIjGUSqzYlLm
@@ -151,10 +151,10 @@ $(document).ready(function() {
                   tempMax +
                   tempMaxUnit +
                   "<br>" +
-                  "<b>Wind: </b>" +
-                  windSpeed +
-                  windUnit +
-                  "<br>" +
+                  //   "<b>Wind: </b>" +
+                  //   windSpeed +
+                  //   windUnit +
+                  //   "<br>" +
                   date
               );
               $("#top_div").append(weatherAppd);
